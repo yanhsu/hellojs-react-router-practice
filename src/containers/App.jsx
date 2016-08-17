@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { addTodo, toggleTodo,delTodo } from 'ToDo/actions/TodoActions'
-import AddTodo from 'ToDo/components/Todo/AddTodo'
-import TodoList from 'ToDo/components/Todo/TodoList'
+import { addTodo, toggleTodo } from 'actions/TodoActions'
+import AddTodo from 'components/Todo/AddTodo'
+import TodoList from 'components/Todo/TodoList'
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <AddTodo onAddClick={text=>dispatch(addTodo(text))}/>
-        <TodoList todos={todos} onTodoClick={index=>dispatch(toggleTodo(index))}onDelClick={index=>dispatch(delTodo(index))}/>
+        <TodoList todos={todos} onTodoClick={index=>dispatch(toggleTodo(index))}/>
       </div>
 
     )

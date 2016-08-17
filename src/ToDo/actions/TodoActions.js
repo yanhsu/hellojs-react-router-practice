@@ -17,7 +17,7 @@ export  function toggleTodo(index){
 }
 export  function delTodo(index){
   return{
-    type: TOGGLE_TODO,
+    type: DEL_TODO,
     index
   }
 }
