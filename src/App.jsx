@@ -9,7 +9,9 @@ export class App extends React.Component {
       <div>
         React Example
         <div>
-          
+          <Link className="btn btn-primary" to="/counter">counter page</Link>
+          <Link className="btn btn-primary" to="/about/yanhsu">about page</Link>
+          <Link className="btn btn-primary" to="/todolist">todolist page</Link>
         </div>
         {this.props.children}
       </div>
